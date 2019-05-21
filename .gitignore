@@ -328,3 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+/MyTools/install/MyTools_00.00.01_Source.zip
+/MyTools/install/MyTools_00.00.01_Install.zip
