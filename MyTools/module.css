@@ -1,0 +1,92 @@
+/* Common Styles */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999999;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+    .loading .loading-inner {
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        position: relative;
+        top: 40%;
+    }
+        .loading .loading-inner:after {
+            content: " ";
+            display: block;
+            width: 46px;
+            height: 46px;
+            margin: 1px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            border-color: #00BCD4 transparent;
+            animation: loading 1.2s linear infinite;
+        }
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.panel-single-table {
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+    .panel-single-table .panel-heading .panel-title {
+        font-size: 27px;
+    }
+    .panel-single-table .panel-body .table {
+        margin-bottom: 0px;
+    }
+        .panel-single-table .panel-body {
+            padding: 0;
+        }
+            .panel-single-table .panel-body .table thead tr {
+                background: #ddd;
+            }
+                .panel-single-table .panel-body .table tbody tr td.action-column {
+                    text-align: right;
+                }
+                    .panel-single-table .panel-body .table tbody tr td.action-column i {
+                        cursor: pointer;
+                        margin-right: 5px;
+                    }
+/* End Common Styles */
+
+/* Todo List View */
+#todo-list-view .panel .panel-heading input[type="checkbox"] {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+#todo-list-view .panel .panel-heading label[for] {
+    cursor: pointer;
+    font-weight: normal;
+}
+#todo-list-view .panel .panel-heading button {
+    margin-left: 10px;
+}
+#todo-list-view .panel .panel-body .table.todo-list thead tr th.description-column {
+    width: 100px;
+}
+#todo-list-view .panel .panel-body .table.todo-list thead tr th.action-column {
+    width: 75px;
+}
+#todo-list-view .panel .panel-body .table.todo-list tbody tr.is-deleted td {
+    text-decoration: line-through;
+}
+    #todo-list-view .panel .panel-body .table.todo-list tbody tr.is-deleted td.action-column {
+        text-decoration: inherit;
+    }
+/* End Todo List View */
