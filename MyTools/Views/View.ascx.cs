@@ -1,6 +1,7 @@
 ﻿using DotNetNuke.Entities.Modules;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace HN.MyTools.Views
 {
@@ -14,11 +15,11 @@ namespace HN.MyTools.Views
 
             if (view != null)
             {
-                view = GetView(view);
+                var viewPath = Server.MapPath("~").Replace("\\", "/") + controlPath + "/" + view + ".ascx";
 
-                if (view != null)
+                if (File.Exists(viewPath))
                 {
-
+                    controlPath += "/" + view + ".ascx";
                 }
                 else
                 {
@@ -38,16 +39,6 @@ namespace HN.MyTools.Views
             control.ID = view;
             UserControlPlaceHolder.Controls.Clear();
             UserControlPlaceHolder.Controls.Add(control);
-        }
-
-        private string GetView(string name)
-        {
-            var views = new Dictionary<string, string>
-            {
-
-            };
-
-            return views.ContainsKey(name) ? views[name] : null;
         }
     }
 }

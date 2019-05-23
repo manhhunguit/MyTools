@@ -70,6 +70,30 @@
               <name>MyTools.dll</name>
               <path>bin</path>
             </assembly>
+            <assembly>
+              <name>MyTools.Data.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>EntityFramework.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>EntityFramework.SqlServer.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Microsoft.Data.Edm.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Microsoft.Data.OData.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>System.Web.Http.OData.dll</name>
+              <path>bin</path>
+            </assembly>
           </assemblies>
         </component>
       </components>
