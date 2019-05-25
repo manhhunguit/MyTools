@@ -38,30 +38,21 @@
     }
 }
 
-.panel-single-table {
-    border: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
+.panel .panel-heading .panel-title {
+    font-size: 27px;
 }
-    .panel-single-table .panel-heading .panel-title {
-        font-size: 27px;
+.panel .panel-body .table thead tr,
+.panel .panel-body .table tfoot tr {
+    background: #ddd;
+    font-weight: bold;
+}
+.panel .panel-body .table tbody tr td.action-column {
+    text-align: right;
+}
+    .panel .panel-body .table tbody tr td.action-column i {
+        cursor: pointer;
+        margin-right: 5px;
     }
-    .panel-single-table .panel-body .table {
-        margin-bottom: 0px;
-    }
-        .panel-single-table .panel-body {
-            padding: 0;
-        }
-            .panel-single-table .panel-body .table thead tr {
-                background: #ddd;
-            }
-                .panel-single-table .panel-body .table tbody tr td.action-column {
-                    text-align: right;
-                }
-                    .panel-single-table .panel-body .table tbody tr td.action-column i {
-                        cursor: pointer;
-                        margin-right: 5px;
-                    }
 /* End Common Styles */
 
 /* Todo List View */

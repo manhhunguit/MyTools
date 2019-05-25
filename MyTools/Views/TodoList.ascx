@@ -6,7 +6,7 @@
 </div>
 
 <div id="todo-list-view">
-    <div class="panel panel-primary panel-single-table">
+    <div class="panel panel-primary">
         <div class="panel-heading">
             <div class="row">
                 <div class="col-xs-6">
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="panel-body">
-            <table class="table todo-list">
+            <table class="table table-striped todo-list">
                 <thead>
                     <tr>
                         <th><%= LocalizeString("Title") %></th>

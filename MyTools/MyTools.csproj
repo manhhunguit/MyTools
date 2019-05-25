@@ -110,6 +110,13 @@
     <Compile Include="ServiceRouteMapper.cs" />
     <Compile Include="Services\TodoItemService.cs" />
     <Compile Include="UnitOfWork.cs" />
+    <Compile Include="Views\CompoundInterest.ascx.cs">
+      <DependentUpon>CompoundInterest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CompoundInterest.ascx.designer.cs">
+      <DependentUpon>CompoundInterest.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Subviews\Index.ascx.cs">
       <DependentUpon>Index.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,6 +147,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\js\compound-interest.js" />
     <Content Include="Content\js\todo-list.js" />
     <Content Include="Content\libraries\fontawesome\css\all.css" />
     <Content Include="Content\libraries\fontawesome\css\all.min.css" />
@@ -1695,6 +1703,7 @@
     <Content Include="License.txt" />
     <Content Include="module.css" />
     <Content Include="ReleaseNotes.txt" />
+    <Content Include="Views\CompoundInterest.ascx" />
     <Content Include="Views\Subviews\Index.ascx" />
     <Content Include="Views\Subviews\NotFound.ascx" />
     <Content Include="Views\TodoList.ascx" />
@@ -1784,7 +1793,9 @@
   <ItemGroup>
     <Content Include="Views\App_LocalResources\TodoList.ascx.resx" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\App_LocalResources\CompoundInterest.ascx.resx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
