@@ -139,7 +139,7 @@
     <value>Initial capital</value>
   </data>
   <data name="InitialCapitalError.Text" xml:space="preserve">
-    <value>Initial capital is required, must be an integer and greater than zero.</value>
+    <value>Initial capital is required, must greater than zero.</value>
   </data>
   <data name="Interest.Text" xml:space="preserve">
     <value>Interest</value>
@@ -154,7 +154,7 @@
     <value>Periods</value>
   </data>
   <data name="PeriodsError.Text" xml:space="preserve">
-    <value>Periods is required, must be an integer and greater than zero.</value>
+    <value>Periods is required, must greater than zero.</value>
   </data>
   <data name="OpeningCapital.Text" xml:space="preserve">
     <value>Opening capital</value>
@@ -163,7 +163,7 @@
     <value>Period</value>
   </data>
   <data name="PeriodError.Text" xml:space="preserve">
-    <value>Period is required, must be an integer and greater than zero.</value>
+    <value>Period is required, must greater than zero.</value>
   </data>
   <data name="Reset.Text" xml:space="preserve">
     <value>Reset</value>

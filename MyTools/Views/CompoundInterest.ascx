@@ -27,7 +27,8 @@
                                     <label class="control-label">
                                         <%= LocalizeString("InitialCapital") %>
                                     </label>
-                                    <input type="number" class="form-control" data-bind="value: initialCapital" />
+                                    <input type="text" class="form-control initial-capital" 
+                                        data-bind="value: initialCapital" />
                                     <span class="help-block" data-bind="visible: initialCapitalHasError()">
                                         <%= LocalizeString("InitialCapitalError") %>
                                     </span>
@@ -39,7 +40,7 @@
                                         <%= LocalizeString("Interest") %>
                                     </label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" data-bind="value: interest" />
+                                        <input type="text" class="form-control interest" data-bind="value: interest" />
                                         <span class="input-group-addon">%</span>
                                     </div>
                                     <span class="help-block" data-bind="visible: interestHasError()">
@@ -55,7 +56,7 @@
                                         <%= LocalizeString("Period") %>
                                     </label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" data-bind="value: period" />
+                                        <input type="text" class="form-control period" data-bind="value: period" />
                                         <span class="input-group-addon"><%= LocalizeString("month(s)") %></span>
                                     </div>
                                     <span class="help-block" data-bind="visible: periodHasError()">
@@ -68,7 +69,7 @@
                                     <label class="control-label">
                                         <%= LocalizeString("Periods") %>
                                     </label>
-                                    <input type="number" class="form-control" data-bind="value: periods" />
+                                    <input type="text" class="form-control periods" data-bind="value: periods" />
                                     <span class="help-block" data-bind="visible: periodsHasError()">
                                         <%= LocalizeString("PeriodsError") %>
                                     </span>
@@ -126,7 +127,8 @@
                                     <label class="control-label">
                                         <%= LocalizeString("InitialCapital") %>
                                     </label>
-                                    <input type="number" class="form-control" data-bind="value: initialCapital" />
+                                    <input type="text" class="form-control initial-capital"
+                                        data-bind="value: initialCapital" />
                                     <span class="help-block" data-bind="visible: initialCapitalHasError()">
                                         <%= LocalizeString("InitialCapitalError") %>
                                     </span>
@@ -138,7 +140,7 @@
                                         <%= LocalizeString("Interest") %>
                                     </label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" data-bind="value: interest" />
+                                        <input type="text" class="form-control interest" data-bind="value: interest" />
                                         <span class="input-group-addon">%</span>
                                     </div>
                                     <span class="help-block" data-bind="visible: interestHasError()">
@@ -154,7 +156,7 @@
                                         <%= LocalizeString("Period") %>
                                     </label>
                                     <div class="input-group">
-                                        <input type="number" class="form-control" data-bind="value: period" />
+                                        <input type="text" class="form-control period" data-bind="value: period" />
                                         <span class="input-group-addon"><%= LocalizeString("month(s)") %></span>
                                     </div>
                                     <span class="help-block" data-bind="visible: periodHasError()">
@@ -167,7 +169,7 @@
                                     <label class="control-label">
                                         <%= LocalizeString("Periods") %>
                                     </label>
-                                    <input type="number" class="form-control" data-bind="value: periods" />
+                                    <input type="text" class="form-control periods" data-bind="value: periods" />
                                     <span class="help-block" data-bind="visible: periodsHasError()">
                                         <%= LocalizeString("PeriodsError") %>
                                     </span>
@@ -217,5 +219,6 @@
 <link href="/DesktopModules/MyTools/Content/libraries/fontawesome/css/all.min.css" rel="stylesheet" />
 
 <script src="/Resources/Libraries/Knockout/03_03_00/knockout.js"></script>
+<script src="/DesktopModules/MyTools/Content/libraries/jquery.mask/jquery.mask.js"></script>
 
 <script src="/DesktopModules/MyTools/Content/js/compound-interest.js"></script>

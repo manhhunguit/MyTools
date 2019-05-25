@@ -1700,6 +1700,7 @@
     <Content Include="Content\libraries\fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="Content\libraries\fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="Content\libraries\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\libraries\jquery.mask\jquery.mask.js" />
     <Content Include="License.txt" />
     <Content Include="module.css" />
     <Content Include="ReleaseNotes.txt" />
